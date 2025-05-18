@@ -1,0 +1,28 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #f76dd4, #f78eb6);
+  color: white;
+  text-align: center;
+}
+h1 {
+  margin-top: 50px;
+  font-size: 2.5em;
+}
+p {
+  font-size: 1.2em;
+}
+nav a {
+  background: #ad4c84;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+nav a:hover {
+  background: #912b66;
+}
