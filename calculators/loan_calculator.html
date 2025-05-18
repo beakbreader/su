@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Loan Calculator</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .calculator {
+      max-width: 500px;
+      margin: 50px auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      color: #333;
+    }
+    input, select, button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+    button {
+      background-color: #6c5ce7;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #5a4db7;
+    }
+    #result {
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <h2>Loan Calculator</h2>
+    
+  <input type="number" id="loanAmount" placeholder="Loan Amount">
+  <input type="number" id="annualRate" placeholder="Interest Rate (%)">
+  <input type="number" id="years" placeholder="Years">
+
+    <button onclick="calculateLoan()">Calculate</button>
+    <div id="result"></div>
+  </div>
+  <script>
+    
+function calculateLoan() {
+  const amount = parseFloat(document.getElementById('loanAmount').value);
+  const rate = parseFloat(document.getElementById('annualRate').value) / 100 / 12;
+  const months = parseFloat(document.getElementById('years').value) * 12;
+  const monthly = (amount * rate) / (1 - Math.pow(1 + rate, -months));
+  document.getElementById('result').innerText = isFinite(monthly)
+    ? "Monthly Payment: $" + monthly.toFixed(2)
+    : "Invalid input.";
+}
+
+  </script>
+</body>
+</html>

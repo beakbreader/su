@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Percentage Calculator</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .calculator {
+      max-width: 500px;
+      margin: 50px auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      color: #333;
+    }
+    input, select, button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+    button {
+      background-color: #6c5ce7;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #5a4db7;
+    }
+    #result {
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <h2>Percentage Calculator</h2>
+    
+  <input type="number" id="part" placeholder="Part">
+  <input type="number" id="whole" placeholder="Whole">
+
+    <button onclick="calculatePercentage()">Calculate</button>
+    <div id="result"></div>
+  </div>
+  <script>
+    
+function calculatePercentage() {
+  const part = parseFloat(document.getElementById('part').value);
+  const whole = parseFloat(document.getElementById('whole').value);
+  if (isNaN(part) || isNaN(whole) || whole === 0) {
+    document.getElementById('result').innerText = "Please enter valid numbers.";
+    return;
+  }
+  const percentage = (part / whole) * 100;
+  document.getElementById('result').innerText = part + " is " + percentage.toFixed(2) + "% of " + whole;
+}
+
+  </script>
+</body>
+</html>
