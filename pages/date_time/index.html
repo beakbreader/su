@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Date Time Calculators</title>
+<link href="../../style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="hero">
+<h1>Date Time Calculators</h1>
+<nav>
+<a href="../../index.html">Home</a>
+</nav>
+</header><div class="category-grid" style="text-align:center; padding:20px;"><button class="category-button" data-target="financial_section" style="margin: 10px; padding: 10px 20px; font-weight: bold; border-radius: 10px; border: none; background-color: #b28d35; color: white;">Financial</button><button class="category-button" data-target="health_section" style="margin: 10px; padding: 10px 20px; font-weight: bold; border-radius: 10px; border: none; background-color: #b28d35; color: white;">Health</button><button class="category-button" data-target="math_section" style="margin: 10px; padding: 10px 20px; font-weight: bold; border-radius: 10px; border: none; background-color: #b28d35; color: white;">Math</button><button class="category-button" data-target="conversion_section" style="margin: 10px; padding: 10px 20px; font-weight: bold; border-radius: 10px; border: none; background-color: #b28d35; color: white;">Conversion</button><button class="category-button" data-target="science_section" style="margin: 10px; padding: 10px 20px; font-weight: bold; border-radius: 10px; border: none; background-color: #b28d35; color: white;">Science</button><button class="category-button" data-target="date__time_section" style="margin: 10px; padding: 10px 20px; font-weight: bold; border-radius: 10px; border: none; background-color: #b28d35; color: white;">Date &amp; Time</button><button class="category-button" data-target="misc_section" style="margin: 10px; padding: 10px 20px; font-weight: bold; border-radius: 10px; border: none; background-color: #b28d35; color: white;">Misc</button></div>
+<main>
+<section class="intro">
+<p>Here you'll find all the tools and utilities related to date time.</p>
+<p>Add calculators to <code>calculators/date_time/</code> and link them here.</p>
+</section>
+</main>
+<footer><p>This website offers a comprehensive collection of free online calculators in finance, health, math, science, and more—designed for accuracy, speed, and simplicity.</p></footer>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const buttons = document.querySelectorAll(".category-button");
+  const sections = document.querySelectorAll(".category-section");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      sections.forEach(section => {
+        section.style.display = "none";
+      });
+      const target = button.getAttribute("data-target");
+      const targetSection = document.getElementById(target);
+      if (targetSection) {
+        targetSection.style.display = "block";
+      }
+    });
+  });
+});
+</script><script>
+document.addEventListener("DOMContentLoaded", function() {
+  const buttons = document.querySelectorAll(".category-button");
+  const sections = document.querySelectorAll(".category-section");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      sections.forEach(section => {
+        section.style.display = "none";
+      });
+      const target = button.getAttribute("data-target");
+      const targetSection = document.getElementById(target);
+      if (targetSection) {
+        targetSection.style.display = "block";
+      }
+    });
+  });
+});
+</script><div class="category-section" id="financial_section" style="display: none; padding: 20px; text-align:center;"><button style="margin:5px; padding:10px 15px; border:none; background:#9c27b0; color:white; border-radius:8px;">Mortgage Calculator</button><br/><button style="margin:5px; padding:10px 15px; border:none; background:#9c27b0; color:white; border-radius:8px;">Loan Calculator</button><br/><button style="margin:5px; padding:10px 15px; border:none; background:#9c27b0; color:white; border-radius:8px;">Retirement Calculator</button><br/><button style="margin:5px; padding:10px 15px; border:none; background:#9c27b0; color:white; border-radius:8px;">Compound Interest Calculator</button><br/><button style="margin:5px; padding:10px 15px; border:none; background:#9c27b0; color:white; border-radius:8px;">Debt-to-Income Ratio Calculator</button><br/></div><div class="category-section" id="health_section" style="display: none; padding: 20px; text-align:center;"><button style="margin:5px; padding:10px 15px; border:none; background:#9c27b0; color:white; border-radius:8px;">BMI Calculator</button><br/><button style="margin:5px; padding:10px 15px; border:none; background:#9c27b0; color:white; border-radius:8px;">Calorie Calculator</button><br/><button style="margin:5px; padding:10px 15px; border:none; background:#9c27b0; color:white; border-radius:8px;">Body Fat Percentage Calculator</button><br/><button style="margin:5px; padding:10px 15px; border:none; background:#9c27b0; color:white; border-radius:8px;">BMR Calculator</button><br/><button style="margin:5px; padding:10px 15px; border:none; background:#9c27b0; color:white; border-radius:8px;">Pregnancy Due Date Calculator</button><br/></div><div class="category-section" id="math_section" style="display: none; padding: 20px; text-align:center;"><button style="margin:5px; padding:10px 15px; border:none; background:#9c27b0; color:white; border-radius:8px;">Percentage Calculator</button><br/><button style="margin:5px; padding:10px 15px; border:none; background:#9c27b0; color:white; border-radius:8px;">Fraction Calculator</button><br/><button style="margin:5px; padding:10px 15px; border:none; background:#9c27b0; color:white; border-radius:8px;">Algebra Calculator</button><br/><button style="margin:5px; padding:10px 15px; border:none; background:#9c27b0; color:white; border-radius:8px;">Quadratic Equation Solver</button><br/><button style="margin:5px; padding:10px 15px; border:none; background:#9c27b0; color:white; border-radius:8px;">Statistics Calculator</button><br/></div><div class="category-section" id="conversion_section" style="display: none; padding: 20px; text-align:center;"><button style="margin:5px; padding:10px 15px; border:none; background:#9c27b0; color:white; border-radius:8px;">Unit Converter</button><br/><button style="margin:5px; padding:10px 15px; border:none; background:#9c27b0; color:white; border-radius:8px;">Currency Converter</button><br/><button style="margin:5px; padding:10px 15px; border:none; background:#9c27b0; color:white; border-radius:8px;">Temperature Converter</button><br/><button style="margin:5px; padding:10px 15px; border:none; background:#9c27b0; color:white; border-radius:8px;">Length Converter</button><br/><button style="margin:5px; padding:10px 15px; border:none; background:#9c27b0; color:white; border-radius:8px;">Weight Converter</button><br/></div><div class="category-section" id="science_section" style="display: none; padding: 20px; text-align:center;"><button style="margin:5px; padding:10px 15px; border:none; background:#9c27b0; color:white; border-radius:8px;">Scientific Calculator</button><br/><button style="margin:5px; padding:10px 15px; border:none; background:#9c27b0; color:white; border-radius:8px;">Molarity Calculator</button><br/><button style="margin:5px; padding:10px 15px; border:none; background:#9c27b0; color:white; border-radius:8px;">Dilution Calculator</button><br/><button style="margin:5px; padding:10px 15px; border:none; background:#9c27b0; color:white; border-radius:8px;">Half-Life Calculator</button><br/><button style="margin:5px; padding:10px 15px; border:none; background:#9c27b0; color:white; border-radius:8px;">Physics Equation Solver</button><br/></div><div class="category-section" id="date__time_section" style="display: none; padding: 20px; text-align:center;"><button style="margin:5px; padding:10px 15px; border:none; background:#9c27b0; color:white; border-radius:8px;">Age Calculator</button><br/><button style="margin:5px; padding:10px 15px; border:none; background:#9c27b0; color:white; border-radius:8px;">Date Difference Calculator</button><br/><button style="margin:5px; padding:10px 15px; border:none; background:#9c27b0; color:white; border-radius:8px;">Time Zone Converter</button><br/><button style="margin:5px; padding:10px 15px; border:none; background:#9c27b0; color:white; border-radius:8px;">Countdown Timer</button><br/><button style="margin:5px; padding:10px 15px; border:none; background:#9c27b0; color:white; border-radius:8px;">Workdays Calculator</button><br/></div></body>
+</html>
