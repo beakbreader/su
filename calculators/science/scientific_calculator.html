@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Scientific Calculator</title>
+<meta content="Scientific Calculator - Accurate, free, and easy to use tool to help you with daily calculations. Perfect for finance, health, math, and science users." name="description"/>
+<link href="../../style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="calculator">
+<h1>Scientific Calculator</h1>
+<p>This page contains the scientific calculator used to quickly and accurately perform key calculations that are useful in daily life and business settings. Trusted by professionals and optimized for search engines.</p>
+</div>
+<footer><p>This website offers a comprehensive collection of free online calculators in finance, health, math, science, and more—designed for accuracy, speed, and simplicity.</p></footer>
+<div class="category-section" id="financial_section" style="display: none; padding: 20px;"><button>Mortgage Calculator</button><br/><button>Loan Calculator</button><br/><button>Retirement Calculator</button><br/><button>Compound Interest Calculator</button><br/><button>Debt-to-Income Ratio Calculator</button><br/></div><div class="category-section" id="health_section" style="display: none; padding: 20px;"><button>BMI Calculator</button><br/><button>Calorie Calculator</button><br/><button>Body Fat Percentage Calculator</button><br/><button>BMR Calculator</button><br/><button>Pregnancy Due Date Calculator</button><br/></div><div class="category-section" id="math_section" style="display: none; padding: 20px;"><button>Percentage Calculator</button><br/><button>Fraction Calculator</button><br/><button>Algebra Calculator</button><br/><button>Quadratic Equation Solver</button><br/><button>Statistics Calculator</button><br/></div><div class="category-section" id="conversion_section" style="display: none; padding: 20px;"><button>Unit Converter</button><br/><button>Currency Converter</button><br/><button>Temperature Converter</button><br/><button>Length Converter</button><br/><button>Weight Converter</button><br/></div><div class="category-section" id="science_section" style="display: none; padding: 20px;"><button>Scientific Calculator</button><br/><button>Molarity Calculator</button><br/><button>Dilution Calculator</button><br/><button>Half-Life Calculator</button><br/><button>Physics Equation Solver</button><br/></div><div class="category-section" id="date__time_section" style="display: none; padding: 20px;"><button>Age Calculator</button><br/><button>Date Difference Calculator</button><br/><button>Time Zone Converter</button><br/><button>Countdown Timer</button><br/><button>Workdays Calculator</button><br/></div><script>
+document.addEventListener("DOMContentLoaded", function() {
+  const buttons = document.querySelectorAll(".category-button");
+  const sections = document.querySelectorAll(".category-section");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      sections.forEach(section => {
+        section.style.display = "none";
+      });
+      const target = button.getAttribute("data-target");
+      const targetSection = document.getElementById(target);
+      if (targetSection) {
+        targetSection.style.display = "block";
+      }
+    });
+  });
+});
+</script><script>
+document.addEventListener("DOMContentLoaded", function() {
+  const buttons = document.querySelectorAll(".category-button");
+  const sections = document.querySelectorAll(".category-section");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      sections.forEach(section => {
+        section.style.display = "none";
+      });
+      const target = button.getAttribute("data-target");
+      const targetSection = document.getElementById(target);
+      if (targetSection) {
+        targetSection.style.display = "block";
+      }
+    });
+  });
+});
+</script></body>
+</html>
