@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Universal Calculators</title>
+<link href="style.css" rel="stylesheet"/>
+<style>
+    .search-bar {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .search-bar input {
+      width: 80%;
+      max-width: 500px;
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      font-size: 1rem;
+    }
+    .popular {
+      text-align: center;
+      padding: 2rem;
+    }
+    .popular ul {
+      list-style: none;
+      padding: 0;
+    }
+    .popular li {
+      margin: 0.5rem 0;
+    }
+    .popular a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      background: rgba(0,0,0,0.15);
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      display: inline-block;
+    }
+    .popular a:hover {
+      background: rgba(255,255,255,0.25);
+    }
+  </style>
+</head>
+<body>
+<header class="hero">
+<h1>Universal Calculators</h1>
+<p>Smarter Tools for Smarter Minds</p>
+<nav>
+<a href="pages/financial/index.html">Financial</a>
+<a href="pages/health/index.html">Health</a>
+<a href="pages/math/index.html">Math</a>
+<a href="pages/conversion/index.html">Conversion</a>
+<a href="pages/science/index.html">Science</a>
+<a href="pages/date_time/index.html">Date &amp; Time</a>
+<a href="pages/misc/index.html">Misc</a>
+</nav>
+</header>
+<main>
+<section class="search-bar">
+<input id="searchInput" onkeyup="filterCalculators()" placeholder="Search for a calculator..." type="text"/>
+</section>
+<section class="popular"><h2>Financial Calculators</h2><ul><li><a href="calculators/financial/mortgage_calculator.html">Mortgage Calculator</a></li>
+<li><a href="calculators/financial/loan_calculator.html">Loan Calculator</a></li>
+<li><a href="calculators/financial/retirement_calculator.html">Retirement Calculator</a></li>
+<li><a href="calculators/financial/compound_interest_calculator.html">Compound Interest Calculator</a></li>
+<li><a href="calculators/financial/dti_calculator.html">Debt-to-Income Ratio Calculator</a></li></ul></section>
+<section class="popular"><h2>Health Calculators</h2><ul><li><a href="calculators/health/bmi_calculator.html">BMI Calculator</a></li>
+<li><a href="calculators/health/calorie_calculator.html">Calorie Calculator</a></li>
+<li><a href="calculators/health/body_fat_calculator.html">Body Fat Percentage Calculator</a></li>
+<li><a href="calculators/health/bmr_calculator.html">BMR Calculator</a></li>
+<li><a href="calculators/health/due_date_calculator.html">Pregnancy Due Date Calculator</a></li></ul></section>
+<section class="popular"><h2>Math Calculators</h2><ul><li><a href="calculators/math/percentage_calculator.html">Percentage Calculator</a></li>
+<li><a href="calculators/math/fraction_calculator.html">Fraction Calculator</a></li>
+<li><a href="calculators/math/algebra_calculator.html">Algebra Calculator</a></li>
+<li><a href="calculators/math/quadratic_calculator.html">Quadratic Equation Solver</a></li>
+<li><a href="calculators/math/statistics_calculator.html">Statistics Calculator</a></li></ul></section>
+<section class="popular"><h2>Conversion Calculators</h2><ul><li><a href="calculators/conversion/unit_converter.html">Unit Converter</a></li>
+<li><a href="calculators/conversion/currency_converter.html">Currency Converter</a></li>
+<li><a href="calculators/conversion/temp_converter.html">Temperature Converter</a></li>
+<li><a href="calculators/conversion/length_converter.html">Length Converter</a></li>
+<li><a href="calculators/conversion/weight_converter.html">Weight Converter</a></li></ul></section>
+<section class="popular"><h2>Science Calculators</h2><ul><li><a href="calculators/science/scientific_calculator.html">Scientific Calculator</a></li>
+<li><a href="calculators/science/molarity_calculator.html">Molarity Calculator</a></li>
+<li><a href="calculators/science/dilution_calculator.html">Dilution Calculator</a></li>
+<li><a href="calculators/science/half_life_calculator.html">Half-Life Calculator</a></li>
+<li><a href="calculators/science/physics_solver.html">Physics Equation Solver</a></li></ul></section>
+<section class="popular"><h2>Date Time Calculators</h2><ul><li><a href="calculators/date_time/age_calculator.html">Age Calculator</a></li>
+<li><a href="calculators/date_time/date_difference_calculator.html">Date Difference Calculator</a></li>
+<li><a href="calculators/date_time/timezone_converter.html">Time Zone Converter</a></li>
+<li><a href="calculators/date_time/countdown_timer.html">Countdown Timer</a></li>
+<li><a href="calculators/date_time/workdays_calculator.html">Workdays Calculator</a></li></ul></section>
+<section class="popular"><h2>Misc Calculators</h2><ul><li><a href="calculators/misc/tip_calculator.html">Tip Calculator</a></li>
+<li><a href="calculators/misc/fuel_cost_calculator.html">Fuel Cost Calculator</a></li>
+<li><a href="calculators/misc/cooking_converter.html">Cooking Measurement Converter</a></li>
+<li><a href="calculators/misc/grade_calculator.html">Grade Calculator</a></li>
+<li><a href="calculators/misc/loan_affordability_calculator.html">Loan Affordability Calculator</a></li></ul></section>
+<div class="grid-container">
+<div class="category"><h2>Financial Calculators</h2><ul><li><a href="calculators/financial/mortgage_calculator.html">Mortgage Calculator</a></li>
+<li><a href="calculators/financial/loan_calculator.html">Loan Calculator</a></li>
+<li><a href="calculators/financial/retirement_calculator.html">Retirement Calculator</a></li>
+<li><a href="calculators/financial/compound_interest_calculator.html">Compound Interest Calculator</a></li>
+<li><a href="calculators/financial/dti_calculator.html">Debt-to-Income Ratio Calculator</a></li></ul></div>
+<div class="category"><h2>Health Calculators</h2><ul><li><a href="calculators/health/bmi_calculator.html">BMI Calculator</a></li>
+<li><a href="calculators/health/calorie_calculator.html">Calorie Calculator</a></li>
+<li><a href="calculators/health/body_fat_calculator.html">Body Fat Percentage Calculator</a></li>
+<li><a href="calculators/health/bmr_calculator.html">BMR Calculator</a></li>
+<li><a href="calculators/health/due_date_calculator.html">Pregnancy Due Date Calculator</a></li></ul></div>
+<div class="category"><h2>Math Calculators</h2><ul><li><a href="calculators/math/percentage_calculator.html">Percentage Calculator</a></li>
+<li><a href="calculators/math/fraction_calculator.html">Fraction Calculator</a></li>
+<li><a href="calculators/math/algebra_calculator.html">Algebra Calculator</a></li>
+<li><a href="calculators/math/quadratic_calculator.html">Quadratic Equation Solver</a></li>
+<li><a href="calculators/math/statistics_calculator.html">Statistics Calculator</a></li></ul></div>
+<div class="category"><h2>Conversion Calculators</h2><ul><li><a href="calculators/conversion/unit_converter.html">Unit Converter</a></li>
+<li><a href="calculators/conversion/currency_converter.html">Currency Converter</a></li>
+<li><a href="calculators/conversion/temp_converter.html">Temperature Converter</a></li>
+<li><a href="calculators/conversion/length_converter.html">Length Converter</a></li>
+<li><a href="calculators/conversion/weight_converter.html">Weight Converter</a></li></ul></div>
+<div class="category"><h2>Science Calculators</h2><ul><li><a href="calculators/science/scientific_calculator.html">Scientific Calculator</a></li>
+<li><a href="calculators/science/molarity_calculator.html">Molarity Calculator</a></li>
+<li><a href="calculators/science/dilution_calculator.html">Dilution Calculator</a></li>
+<li><a href="calculators/science/half_life_calculator.html">Half-Life Calculator</a></li>
+<li><a href="calculators/science/physics_solver.html">Physics Equation Solver</a></li></ul></div>
+<div class="category"><h2>Date Time Calculators</h2><ul><li><a href="calculators/date_time/age_calculator.html">Age Calculator</a></li>
+<li><a href="calculators/date_time/date_difference_calculator.html">Date Difference Calculator</a></li>
+<li><a href="calculators/date_time/timezone_converter.html">Time Zone Converter</a></li>
+<li><a href="calculators/date_time/countdown_timer.html">Countdown Timer</a></li>
+<li><a href="calculators/date_time/workdays_calculator.html">Workdays Calculator</a></li></ul></div>
+</div>
+<section class="popular">
+<h2>Popular Calculators</h2>
+<ul id="calculatorList">
+<li><a href="calculators/financial/mortgage_calculator.html">Mortgage Calculator</a></li>
+<li><a href="calculators/financial/loan_calculator.html">Loan Calculator</a></li>
+<li><a href="calculators/health/bmi_calculator.html">BMI Calculator</a></li>
+<li><a href="calculators/math/percentage_calculator.html">Percentage Calculator</a></li>
+<li><a href="calculators/financial/compound_interest_calculator.html">Compound Interest Calculator</a></li>
+<li><a href="calculators/date_time/date_difference_calculator.html">Date Difference Calculator</a></li>
+<li><a href="calculators/conversion/unit_converter.html">Unit Converter</a></li>
+</ul>
+</section>
+</main>
+<footer>
+<p>This website offers a comprehensive collection of free online calculators in finance, health, math, science, and more—designed for accuracy, speed, and simplicity.</p>
+</footer>
+<script>
+    function filterCalculators() {
+      const input = document.getElementById('searchInput').value.toLowerCase();
+      const listItems = document.querySelectorAll('#calculatorList li');
+      listItems.forEach(li => {
+        const text = li.textContent.toLowerCase();
+        li.style.display = text.includes(input) ? '' : 'none';
+      });
+    }
+  </script><script>
+document.addEventListener("DOMContentLoaded", function() {
+  const buttons = document.querySelectorAll(".category-button");
+  const sections = document.querySelectorAll(".category-section");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      sections.forEach(section => {
+        section.style.display = "none";
+      });
+      const target = button.getAttribute("data-target");
+      const targetSection = document.getElementById(target);
+      if (targetSection) {
+        targetSection.style.display = "block";
+      }
+    });
+  });
+});
+</script>
+<div class="category-section" id="financial_section" style="display: none; padding: 20px;"><button>Mortgage Calculator</button><br/><button>Loan Calculator</button><br/><button>Retirement Calculator</button><br/><button>Compound Interest Calculator</button><br/><button>Debt-to-Income Ratio Calculator</button><br/></div><div class="category-section" id="health_section" style="display: none; padding: 20px;"><button>BMI Calculator</button><br/><button>Calorie Calculator</button><br/><button>Body Fat Percentage Calculator</button><br/><button>BMR Calculator</button><br/><button>Pregnancy Due Date Calculator</button><br/></div><div class="category-section" id="math_section" style="display: none; padding: 20px;"><button>Percentage Calculator</button><br/><button>Fraction Calculator</button><br/><button>Algebra Calculator</button><br/><button>Quadratic Equation Solver</button><br/><button>Statistics Calculator</button><br/></div><div class="category-section" id="conversion_section" style="display: none; padding: 20px;"><button>Unit Converter</button><br/><button>Currency Converter</button><br/><button>Temperature Converter</button><br/><button>Length Converter</button><br/><button>Weight Converter</button><br/></div><div class="category-section" id="science_section" style="display: none; padding: 20px;"><button>Scientific Calculator</button><br/><button>Molarity Calculator</button><br/><button>Dilution Calculator</button><br/><button>Half-Life Calculator</button><br/><button>Physics Equation Solver</button><br/></div><div class="category-section" id="date__time_section" style="display: none; padding: 20px;"><button>Age Calculator</button><br/><button>Date Difference Calculator</button><br/><button>Time Zone Converter</button><br/><button>Countdown Timer</button><br/><button>Workdays Calculator</button><br/></div></body>
+</html>
